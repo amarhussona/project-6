@@ -217,15 +217,15 @@ Restart the service and enable it so it will be running even after reboot:
 ![restart apache](./images/29_restart_apache.png)
 
 Configure DB to work with WordPress using these:
-
-<!-- sudo mysql
+```
+sudo mysql
 CREATE DATABASE wordpress;
 CREATE USER `myuser`@`<Web-Server-Private-IP-Address>` IDENTIFIED BY 'mypass';
 GRANT ALL ON wordpress.* TO 'myuser'@'<Web-Server-Private-IP-Address>';
 FLUSH PRIVILEGES;
 SHOW DATABASES;
-exit -->
-
+exit
+```
 Note: make use it is the correct webserver private IP address
 
 ![create db and user](./images/30_create_database_and_user.png)
